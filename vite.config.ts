@@ -2,11 +2,12 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  // تحديد المسار الأساسي للمشروع ليتوافق مع رابط GitHub Pages (https://username.github.io/ilovee/)
+  // هذا السطر هو الأهم لعمل الموقع على GitHub Pages في مجلد ilovee
   base: '/ilovee/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    emptyOutDir: true,
     sourcemap: false,
   },
 });
